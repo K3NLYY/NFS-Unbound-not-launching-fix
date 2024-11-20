@@ -16,8 +16,8 @@ del "%USERPROFILE%\documents\Need For Speed(TM) Unbound\cache\*.PcDx12*"
 
 echo.
 echo cache has been cleared downloading EA installer...
-set eaLink= "https://raw.githubusercontent.com/K3NLYY/NFS-Unbound-not-launching-fix/refs/heads/main/EAappInstaller.exe"
-powershell -Command "Invoke-WebRequest -Uri '%eaLink%' -UseBasicParsing | Select-Object -ExpandProperty Content | Out-File -FilePath EAappInstaller.exe"
+set eaLink= "https://origin-a.akamaihd.net/EA-Desktop-Client-Download/installer-releases/EAappInstaller.exe"
+powershell -Command "(New-Object Net.WebClient).DownloadFile('%eaLink%', 'EAappInstaller.exe')"
 
 echo.
 echo Once the Installer is launched you will be prompted to repair the launcher.
