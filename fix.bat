@@ -10,7 +10,7 @@ if %errorlevel%==1 ( goto :delete ) else exit
 echo please wait deleting cache...
 del %localappdata%\EADesktop\cache\qmlcache\*.*
 del %localappdata%\EALaunchHelper\cache\qmlcache\*.*
-del %localappdata%\Electronic Arts\EA Desktop\IGOCache
+del "%localappdata%\Electronic Arts\EA Desktop\IGOCache"
 del %localappdata%\Link2EA\cache\qmlcache\*.*
 del "%USERPROFILE%\documents\Need For Speed(TM) Unbound\cache\*.PcDx12*"
 
